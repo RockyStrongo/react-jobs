@@ -6,7 +6,7 @@ import { Menu } from '@headlessui/react'
  export default function HeaderMenu() {
 
     const links = [
-        { href: '/jobs', label: "Jobs" },
+        { href: '/', label: "Jobs" },
         { href: '/blog', label: "Blog" }
     ]
 
@@ -36,7 +36,7 @@ import { Menu } from '@headlessui/react'
                                     {({ active }) => (
                                         <a key={link.href}
                                             href={link.href}
-                                            className={`${active ? 'bg-primary text-secondary' : 'bg-white text-primary'
+                                            className={`${active ? 'bg-primary text-tertiary' : 'bg-white text-primary'
                                                 } group flex w-full items-center rounded-md px-2 py-2 font-content`}
                                         >
                                             {link.label}
